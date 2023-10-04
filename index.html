@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Change CSS link to Bulma!!!! -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link href="./assets/style.css" rel="stylesheet">
+  <script defer src="./assets/script.js"></script>
+  <title>Am I Dying?</title>
 </head>
 <body>
-    
+  <div class="container">
+    <div class="survey">
+      <!-- survey content goes here -->
+    <h1>Symptom Survey</h1>
+    <form id="symptom-form">
+        <h2>Select your symptoms:</h2>
+        <input type="checkbox" id="eaten" name="symptoms" value="Eaten">
+        <label for="eaten">Have you eaten today? (Check if yes).</label><br>
+
+        <input type="checkbox" id="fluids" name="symptoms" value="Fluids">
+        <label for="fluids">Have you been drinking fluids today? (Check if yes).</label><br>
+        
+        <input type="checkbox" id="fatigue" name="symptoms" value="Fatigue">
+        <label for="fatigue">Fatigue</label><br>
+        
+        <input type="checkbox" id="sweat" name="symptoms" value="Sweat">
+        <label for="sweat">Sweating</label><br>
+        
+        <input type="checkbox" id="chestpain" name="symptoms" value="Chestpain">
+        <label for="chestpain">Chest Pain</label><br>
+
+        <input type="checkbox" id="tightchest" name="symptoms" value="TightChest">
+        <label for="tightchest">Tightness of Chest</label><br>
+
+        <input type="checkbox" id="sob" name="symptoms" value="SOB">
+        <label for="SOB">Shortness of Breath</label><br>
+
+        <input type="checkbox" id="headache" name="symptoms" value="Headache">
+        <label for="headache">Headache</label><br>
+
+        <input type="checkbox" id="cough" name="symptoms" value="Cough">
+        <label for="cough">Cough</label><br>
+
+        
+
+        
+
+        <input type="submit" value="Submit">
+
+      </div>
+
+      <div class="results">
+        <!-- survey results go here -->
+        <h2>Your Results!</h2>
+        <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="symptoms">Symptoms (separate with commas)</label>
+      <textarea id="symptoms" name="symptoms" rows="3" required></textarea>
+      </div>
+    </div>
+
+        
 </body>
 </html>
