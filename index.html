@@ -1,72 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- Change CSS link to Bulma!!!! -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link href="./assets/style.css" rel="stylesheet">
-  <title>Am I Dying?</title>
-</head>
-<body>
-  <div class="container">
-    <div class="survey">
-      <!-- survey content goes here -->
-    <h1>Symptom Survey</h1>
-    <form id="symptom-form">
-        <h2>Select your symptoms:</h2>
-        <input type="checkbox" id="eaten" name="symptoms" value="Eaten">
-        <label for="eaten">Have you eaten today? (Check if yes).</label><br>
-
-        <input type="checkbox" id="fluids" name="symptoms" value="Fluids">
-        <label for="fluids">Have you been drinking fluids today? (Check if yes).</label><br>
-        
-        <input type="checkbox" id="fatigue" name="symptoms" value="Fatigue">
-        <label for="fatigue">Fatigue</label><br>
-        
-        <input type="checkbox" id="sweat" name="symptoms" value="Sweat">
-        <label for="sweat">Sweating</label><br>
-        
-        <input type="checkbox" id="chestpain" name="symptoms" value="Chestpain">
-        <label for="chestpain">Chest Pain</label><br>
-
-        <input type="checkbox" id="tightchest" name="symptoms" value="TightChest">
-        <label for="tightchest">Tightness of Chest</label><br>
-
-        <input type="checkbox" id="sob" name="symptoms" value="SOB">
-        <label for="sob">Shortness of Breath</label><br>
-
-        <input type="checkbox" id="headache" name="symptoms" value="Headache">
-        <label for="headache">Headache</label><br>
-
-        <input type="checkbox" id="cough" name="symptoms" value="Cough">
-        <label for="cough">Cough</label><br>
-
-        
-
-        
-
-        <input type="submit" value="Submit">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project 1: Name and Quote Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+      <header>
+        <h1>Random Name Generator</h1>
+      </header>
+      <div class="namecard">
+        <div class="card-header">
+          <h2> Click the button below for a random name to appear!</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="generate"
+            placeholder="Incoming awesome name..."
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="name-generate" class="namebtn">Generate Name</button>
+        </div>
       </div>
-
-      <div class="results">
-        <!-- survey results go here -->
-        <h2>Your Results!</h2>
-        <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-  
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-  
-      <label for="symptoms">Any other symptoms? (separate with commas)</label>
-      <textarea id="symptoms" name="symptoms" rows="3" required></textarea>
-      </div>
-    </div>
-
-        
-    <script defer src="./assets/script.js"></script>
-</body>
+      
+      <div class="wrapper">
+        <header>
+          <h1>Quote Generator</h1>
+        </header>
+        <div class="quotecard">
+          <div class="card-header">
+            <h2>Now click the button below and tell this inspiring quote to the person who shares the name above!</h2>
+          </div>
+          <div class="card-body">
+            <textarea
+              readonly
+              id="generate"
+              placeholder="Get ready for a fist of inspiration 👊..."
+              aria-label="Generated Password"
+            ></textarea>
+          </div>
+          <div class="card-footer">
+            <button id="quote-generate" class="quotebtn">Generate Quote</button>
+          </div>
+        </div>
+        </div>
+    <script src="assets/script.js"></script>
+  </body>
 </html>
