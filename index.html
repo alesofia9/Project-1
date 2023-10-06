@@ -8,7 +8,6 @@
   <!-- Change CSS link to Bulma!!!! -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link href="./assets/style.css" rel="stylesheet">
-  <script defer src="./assets/script.js"></script>
   <title>Am I Dying?</title>
 </head>
 <body>
@@ -37,7 +36,7 @@
         <label for="tightchest">Tightness of Chest</label><br>
 
         <input type="checkbox" id="sob" name="symptoms" value="SOB">
-        <label for="SOB">Shortness of Breath</label><br>
+        <label for="sob">Shortness of Breath</label><br>
 
         <input type="checkbox" id="headache" name="symptoms" value="Headache">
         <label for="headache">Headache</label><br>
@@ -62,11 +61,12 @@
       <label for="email">Email</label>
       <input type="email" id="email" name="email" required>
   
-      <label for="symptoms">Symptoms (separate with commas)</label>
+      <label for="symptoms">Any other symptoms? (separate with commas)</label>
       <textarea id="symptoms" name="symptoms" rows="3" required></textarea>
       </div>
     </div>
 
         
+    <script defer src="./assets/script.js"></script>
 </body>
 </html>
