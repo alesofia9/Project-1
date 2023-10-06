@@ -1,5 +1,5 @@
 const apiKey = '2adeaa2be6msh80980fcbeb1b49ap1eca83jsndd1d02df27c5';
-const apiUrl = 'https://diagnosis.p.rapidapi.com/api/DDxItems/GetTests?AuthenticationID';
+const apiUrl = 'https://diagnosis.p.rapidapi.com/api/DDxItems/GetTests';
 
 const options = {
 	method: 'GET',
