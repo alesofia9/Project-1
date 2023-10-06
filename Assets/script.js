@@ -1,13 +1,23 @@
-const apiKey = '2adeaa2be6msh80980fcbeb1b49ap1eca83jsndd1d02df27c5';
-const apiUrl = 'https://diagnosis.p.rapidapi.com/api/DDxItems/GetTests';
-
+const url = 'https://baby-names-by-api-ninjas.p.rapidapi.com/v1/babynames';
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '2adeaa2be6msh80980fcbeb1b49ap1eca83jsndd1d02df27c5',
-		'X-RapidAPI-Host': 'diagnosis.p.rapidapi.com'
+		'X-RapidAPI-Key': '7cd0ee983emsh30418ed0a8e6e09p13acf1jsna1667b03e552',
+		'X-RapidAPI-Host': 'baby-names-by-api-ninjas.p.rapidapi.com'
 	}
 };
+
+    function getApi(requestUrl, options){
+    
+        fetch(requestUrl, options)
+        .then(function (response){
+            return response.json();
+        })
+        .then(function(data){
+            console.log(data);
+        })
+    };
+    getApi(url, options);
 
 document.getElementById('symptom-form').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent page from refreshing
