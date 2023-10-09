@@ -41,14 +41,15 @@ var buttonClickHandler = function (event) {
 var quoteGenerateEl = document.querySelector("#quote-generate");
 var quoteContainerEl = document.querySelector("#generateQuote");
 
-const urlSecond = 'https://famous-quotes4.p.rapidapi.com/random?category=all&count=1';
+const urlSecond = 'https://quotes15.p.rapidapi.com/quotes/random/';
 const optionsSecond = {
 	method: 'GET',
 	headers: {
 		//"X-RapidAPI-Key": "7cd0ee983emsh30418ed0a8e6e09p13acf1jsna1667b03e552",
-		"X-RapidAPI-Host": "famous-quotes4.p.rapidapi.com"
+		"X-RapidAPI-Host": "quotes15.p.rapidapi.com"
 	}
 };
+
 var buttonClickQuote = function (event) {
   event.preventDefault();
       getApiSecond(urlSecond, optionsSecond);
@@ -69,7 +70,7 @@ var buttonClickQuote = function (event) {
     var displayQuotes = function(data){
       quoteContainerEl.textContent="";  
       var quotesEl = document.createElement("span");
-      quotesEl.textContent = "Inspirational Quotes: " + data;
+      quotesEl.textContent = "Inspirational Quotes: " + data.content;
       quoteContainerEl.appendChild(quotesEl);
     };
   
