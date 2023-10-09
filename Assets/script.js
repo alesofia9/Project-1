@@ -36,8 +36,8 @@ var buttonClickHandler = function (event) {
     nameGenerateEl.addEventListener('click', buttonClickHandler);
 
 
-var nameGenerateEl = document.querySelector("#name-generate");
-var nameContainerEl = document.querySelector("#generateName");
+var qouteGenerateEl = document.querySelector("#quote-generate");
+var qouteContainerEl = document.querySelector("#generateQoute");
 
 const url = 'https://baby-names-by-api-ninjas.p.rapidapi.com/v1/babynames';
 const options = {
@@ -47,12 +47,12 @@ const options = {
 		'X-RapidAPI-Host': 'baby-names-by-api-ninjas.p.rapidapi.com'
 	}
 };
-var buttonClickHandler = function (event) {
+var buttonClickQoute = function (event) {
   event.preventDefault();
-      getApi(url, options);
+      getApiSecond(url, options);
 };
 
-    function getApi(requestUrl, options){
+    function getApiSecond(requestUrl, options){
     
         fetch(requestUrl, options)
         .then(function (response){
@@ -60,15 +60,15 @@ var buttonClickHandler = function (event) {
         })
         .then(function(data){
             //console.log(data);
-           displayNames(data);
+           displayQoutes(data);
         });
     };
 
-    var displayNames = function(data){
-      nameContainerEl.textContent="";  
-      var namesEl = document.createElement("span");
-      namesEl.textContent = "Possible Names: " + data;
-      nameContainerEl.appendChild(namesEl);
+    var displayQoutes = function(data){
+      qouteContainerEl.textContent="";  
+      var qoutesEl = document.createElement("span");
+      qoutesEl.textContent = "Inspirational Qoutes: " + data;
+      qouteContainerEl.appendChild(qoutesEl);
     };
   
-    nameGenerateEl.addEventListener('click', buttonClickHandler);
+    qouteGenerateEl.addEventListener('click', buttonClickQoute);
