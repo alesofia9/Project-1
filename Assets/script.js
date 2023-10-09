@@ -21,7 +21,7 @@ var buttonClickHandler = function (event) {
             return response.json();
         })
         .then(function(data){
-            //console.log(data);
+            console.log(data);
            displayNames(data);
         });
     };
@@ -36,39 +36,41 @@ var buttonClickHandler = function (event) {
     nameGenerateEl.addEventListener('click', buttonClickHandler);
 
 
-var qouteGenerateEl = document.querySelector("#quote-generate");
-var qouteContainerEl = document.querySelector("#generateQoute");
 
-const url = 'https://baby-names-by-api-ninjas.p.rapidapi.com/v1/babynames';
-const options = {
+
+var quoteGenerateEl = document.querySelector("#quote-generate");
+var quoteContainerEl = document.querySelector("#generateQuote");
+
+const urlSecond = 'https://famous-quotes4.p.rapidapi.com/random?category=all&count=1';
+const optionsSecond = {
 	method: 'GET',
 	headers: {
-		//'X-RapidAPI-Key': '7cd0ee983emsh30418ed0a8e6e09p13acf1jsna1667b03e552',
-		'X-RapidAPI-Host': 'baby-names-by-api-ninjas.p.rapidapi.com'
+		"X-RapidAPI-Key": "7cd0ee983emsh30418ed0a8e6e09p13acf1jsna1667b03e552",
+		"X-RapidAPI-Host": "famous-quotes4.p.rapidapi.com"
 	}
 };
-var buttonClickQoute = function (event) {
+var buttonClickQuote = function (event) {
   event.preventDefault();
-      getApiSecond(url, options);
+      getApiSecond(urlSecond, optionsSecond);
 };
 
-    function getApiSecond(requestUrl, options){
+    function getApiSecond(requestURL, optionsSecond){
     
-        fetch(requestUrl, options)
+        fetch(requestURL, optionsSecond)
         .then(function (response){
             return response.json();
         })
         .then(function(data){
-            //console.log(data);
-           displayQoutes(data);
+            console.log(data);
+           displayQuotes(data);
         });
     };
 
-    var displayQoutes = function(data){
-      qouteContainerEl.textContent="";  
-      var qoutesEl = document.createElement("span");
-      qoutesEl.textContent = "Inspirational Qoutes: " + data;
-      qouteContainerEl.appendChild(qoutesEl);
+    var displayQuotes = function(data){
+      quoteContainerEl.textContent="";  
+      var quotesEl = document.createElement("span");
+      quotesEl.textContent = "Inspirational Quotes: " + data;
+      quoteContainerEl.appendChild(quotesEl);
     };
   
-    qouteGenerateEl.addEventListener('click', buttonClickQoute);
+    quoteGenerateEl.addEventListener('click', buttonClickQuote);
