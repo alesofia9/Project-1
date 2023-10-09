@@ -16,8 +16,6 @@ var buttonClickHandler = function (event) {
       getApi(url, options);
 };
 
-
-
     function getApi(requestUrl, options){
     
         fetch(requestUrl, options)
@@ -31,13 +29,10 @@ var buttonClickHandler = function (event) {
     };
 
     var displayNames = function(data){
-
       nameContainerEl.textContent="";  
-
       var namesEl = document.createElement("span");
       namesEl.textContent = "Possible Names: " + data;
       nameContainerEl.appendChild(namesEl);
-   
     };
   
     nameGenerateEl.addEventListener('click', buttonClickHandler);
