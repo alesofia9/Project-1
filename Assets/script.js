@@ -1,4 +1,6 @@
 var nameGenerateEl = document.querySelector('#name-generate');
+var nameContainerEl = document.querySelector("#card-body");
+
 
 
 const url = 'https://baby-names-by-api-ninjas.p.rapidapi.com/v1/babynames';
@@ -9,6 +11,12 @@ const options = {
 		'X-RapidAPI-Host': 'baby-names-by-api-ninjas.p.rapidapi.com'
 	}
 };
+var buttonClickHandler = function (event) {
+  event.preventDefault();
+      getApi(url, options);
+};
+
+
 
     function getApi(requestUrl, options){
     
@@ -21,14 +29,26 @@ const options = {
            displayNames(data);
         });
     };
+
+    var displayNames = function(data){
+      nameContainerEl.textContent= "";  
+
+      var namesEl = document.createElement("span");
+      namesEl.textContent = "Possible Names: " + data;
+      namesEl.classList = "list-group-item"
+      nameContainerEl.appendChild(namesEl);
+   
+    };
     //getApi(url, options);
+    nameGenerateEl.addEventListener('click', buttonClickHandler);
 
-    const infoElement = document.createElement('results');
-    infoElement.innerHTML = `<h3>${symptomName}</h3>`;
-    medicalInfo.appendChild(infoElement);
 
-document.getElementById('symptom-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent page from refreshing
+    //const infoElement = document.createElement('results');
+    //infoElement.innerHTML = `<h3>${symptomName}</h3>`;
+    //medicalInfo.appendChild(infoElement);
+
+//document.getElementById('symptom-form').addEventListener('submit', function(event) {
+  //event.preventDefault(); // Prevent page from refreshing
 
  // const formElements = document.forms['symptom-form'].elements['symptoms'];
   //const selectedSymptoms = Array.from(formElements)
@@ -58,8 +78,8 @@ document.getElementById('symptom-form').addEventListener('submit', function(even
    // const symptomName = info.name;
    // const symptomDescription = info.description;
 
-    const infoElement = document.createElement('results');
-    infoElement.innerHTML = `<h3>${symptomName}</h3><p>${symptomDescription}</p>`;
-    medicalInfo.appendChild(infoElement);
+   // const infoElement = document.createElement('results');
+    //infoElement.innerHTML = `<h3>${symptomName}</h3><p>${symptomDescription}</p>`;
+    //medicalInfo.appendChild(infoElement);
   //});
 //}
