@@ -45,7 +45,7 @@ const urlSecond = 'https://famous-quotes4.p.rapidapi.com/random?category=all&cou
 const optionsSecond = {
 	method: 'GET',
 	headers: {
-		"X-RapidAPI-Key": "7cd0ee983emsh30418ed0a8e6e09p13acf1jsna1667b03e552",
+		//"X-RapidAPI-Key": "7cd0ee983emsh30418ed0a8e6e09p13acf1jsna1667b03e552",
 		"X-RapidAPI-Host": "famous-quotes4.p.rapidapi.com"
 	}
 };
@@ -54,9 +54,9 @@ var buttonClickQuote = function (event) {
       getApiSecond(urlSecond, optionsSecond);
 };
 
-    function getApiSecond(requestURL, optionsSecond){
+    function getApiSecond(requestURL, options){
     
-        fetch(requestURL, optionsSecond)
+        fetch(requestURL, options)
         .then(function (response){
             return response.json();
         })
