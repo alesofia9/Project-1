@@ -29,7 +29,7 @@ var buttonClickHandler = function (event) {
     var displayNames = function(data){
       nameContainerEl.textContent="";  
       var namesEl = document.createElement("span");
-      namesEl.textContent = "Possible Names: " + data;
+      namesEl.textContent = "Awesome Names: " + data;
       nameContainerEl.appendChild(namesEl);
     };
   
