@@ -1,6 +1,6 @@
 # Project01
 
-DIGITAL FORTUNE COOKIE
+DIGITAL FORTUNE COOKIE 🥠
 
 ## Contributers
 
@@ -9,7 +9,46 @@ Joe Gaytan         @ Jo3yG
 Sergio Ramirez     @ VinlandMoon
 
 ## Description
-Have you ever needed a way to create a unique name to name a building, a job, a title of a project, or simply to name a new baby, but all you end up coming up with is the same name over and over again? Well have no fear, our new project is designed to fix that just issue. Now with a click of a button you to can be given a string of 10 (yes that is correct, 10) unique names. You may aso be thinking even thought that was pretty easy to do we have also created a second button that allows you to get a digital fortune cookie of inspirational quotes by all types of people on earth, even some that are not on earth. The purpose of this application is to provide users with a creative and fun way to come up with great quotes, what we call in the bizz (DIGITAL FORTUNE COOKIES.) as well as unique names to use for your next baby and or other thing that may be just as important as a baby.
+
+Welcome to Digital Fortune Cookie 🥠 – Your Source for Random Creativity!
+
+🌟 Who We Are 🌟
+
+At Digital Fortune Cookie, we believe in the power of randomness to inspire creativity, spark imagination, and add a dash of fun to your day. Our website is a delightful fusion of two intriguing generators: one that crafts unique names and another that serves up thought-provoking quotes.
+
+🔮 What We Do 🔮
+
+NameGen:
+Ever struggled to come up with a unique character name for your novel, game, or just about anything? Look no further! Our NameGen tool harnesses the magic of randomness to conjure up one-of-a-kind names that are bound to catch your fancy. Whether you need a whimsical fairy name, a futuristic sci-fi moniker, or something in between, we've got you covered.
+
+QuoteGen:
+Seeking inspiration or a thought-provoking quote to ponder over your morning coffee? QuoteGen is here to serve. With a click of a button, you'll be treated to a diverse array of quotes from renowned thinkers, writers, and everyday people. Whether you're looking for wisdom, humor, or motivation, QuoteGen has a treasure trove of words waiting for you.
+
+🧞‍♀️ Our Mission 🧞‍♂️
+
+Our mission is simple: to bring a touch of serendipity and inspiration into your life. We believe that randomness can lead to unexpectedly beautiful and creative outcomes. Whether you're an artist, writer, game developer, or just someone looking for a little dose of daily inspiration, we're here to help you find that spark of genius hidden in the unexpected.
+
+🌐 How to Use Our Generators 🌐
+
+Using Digital Fortune Cookie 🥠 couldn't be easier. Simply visit our website, select your preferred generator, and click the magic buttons. You'll instantly be presented with a list of unique names or a captivating quote to brighten your day.
+
+🚀 Join Our Community 🚀
+
+Digital Fortune Cookie 🥠 is more than just a website; it's a community of creative minds who love to embrace the unexpected. Connect with us on social media, share your favorite names and quotes, and join in on the conversation. We can't wait to see what you come up with!
+
+📜 Our Story 📜
+
+Digital Fortune Cookie 🥠 was born out of a passion for creativity and a belief in the power of serendipity. Our team of developers, writers, and creatives came together to create a space where randomness meets inspiration. We're constantly adding new features and improvements, so stay tuned for even more exciting surprises.
+
+💡 Get Inspired 💡
+
+So, whether you're a writer in need of character names, a philosopher seeking wisdom, or just someone looking for a bit of fun, dive into the site of Digital Fortune Cookie 🥠. Who knows what beautiful randomness awaits you? Join us today and let your creativity soar!
+
+Thank you for being a part of our vibrant community. Here's to the magic of randomness and the beauty of creativity!
+
+With love and inspiration,
+
+The Digital Fortune Cookie 🥠 Team
 
 
 ## Screenshot
@@ -36,7 +75,7 @@ https://github.com/alesofia9/Project-1.git
 
 MIT License
 
-Copyright (c) 2023 alesofia9
+Copyright (c) 2023 alesofia9, Jo3yG, & VinlandMoon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
