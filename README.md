@@ -53,7 +53,7 @@ The Digital Fortune Cookie 🥠 Team
 
 ## Screenshot
 The following image shows the application:
-![Alt text](<Screenshot 2023-10-09 at 7.31.17 PM.png>)
+![Alt text](/Screenshot%202023-10-09%20at%2010.24.07 PM.png)
 
 
 
