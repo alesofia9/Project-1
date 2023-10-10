@@ -8,44 +8,60 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="assets/style.css" />
   </head>
+
   <body>
+<header>
+  <h1 class="has-text-black title is-1">Project 1: Digital Fortune Cookie 🥠</h1>
+  <h2 class="mt-5 has-text-black subtitle is-5"> Hello fellow web surfers, welcome to our site! We believe in the power of randomness to inspire creativity, spark imagination, and add a dash of fun to your day. <br> 
+    Our website is a delightful fusion of two intriguing generators: one that crafts unique names and another that serves up thought-provoking quotes. <br>
+    Don't be shy, click the buttons below and give it a try!   </h2>
+</header>
+
+    <div class="wrapper">
       <header>
-        <h1>Random Name Generator</h1>
+        <h2 class="is-size-2"> Name Generator</h2>
       </header>
       <div class="namecard">
         <div class="card-header">
           <h2> Click the button below for a random name to appear!</h2>
         </div>
         <div id="generateName" class="card-body">
-          <textarea
-            placeholder="Incoming awesome name..."
-            aria-label="Generated Password"
-          ></textarea>
+          <div class="has-text-centered content">
+            Incoming awesome lists of names...
+          </div>
         </div>
         <div class="card-footer">
           <button id="name-generate" class="namebtn">Generate Name</button>
         </div>
       </div>
-      
-      <div class="wrapper">
+     
         <header>
-          <h1>Quote Generator</h1>
+          <h2 class="is-size-2">Quote Generator</h2>
         </header>
         <div class="quotecard">
           <div class="card-header">
             <h2>Now click the button below and tell this inspiring quote to the person who shares the name above!</h2>
           </div>
           <div id="generateQuote" class="card-body">
-            <textarea
-              placeholder="Get ready for a fist of inspiration 👊..."
-              aria-label="Generated Password"
-            ></textarea>
+            <div class="has-text-centered content">
+              Get ready for fistfull of inspiration 👊...
+            </div>
           </div>
           <div class="card-footer">
             <button id="quote-generate" class="quotebtn">Generate Quote</button>
           </div>
         </div>
+      </div>
+
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            Digital Fortune Cookie by <a href="https://github.com/alesofia9">alesofia9👾, <a href="https://github.com/Jo3yG">Jo3yG🟢</a>, and <a href="https://github.com/VinlandMoon"> VinlandMoon.</a> The source code is licensed
+            <a href="https://github.com/alesofia9/Project-1">MIT</a>.
+            </p>
         </div>
+      </footer>
+
     <script src="assets/script.js"></script>
   </body>
 </html>
