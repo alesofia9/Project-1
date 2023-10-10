@@ -5,7 +5,7 @@ const url = "https://baby-names-by-api-ninjas.p.rapidapi.com/v1/babynames";
 const options = {
 	method: "GET",
 	headers: {
-		//"X-RapidAPI-Key": "7cd0ee983emsh30418ed0a8e6e09p13acf1jsna1667b03e552",
+		"X-RapidAPI-Key": "7cd0ee983emsh30418ed0a8e6e09p13acf1jsna1667b03e552",
 		"X-RapidAPI-Host": "baby-names-by-api-ninjas.p.rapidapi.com"
 	}
 };
@@ -45,7 +45,7 @@ const urlSecond = "https://quotes15.p.rapidapi.com/quotes/random/";
 const optionsSecond = {
 	method: "GET",
 	headers: {
-		//"X-RapidAPI-Key": "7cd0ee983emsh30418ed0a8e6e09p13acf1jsna1667b03e552",
+		"X-RapidAPI-Key": "7cd0ee983emsh30418ed0a8e6e09p13acf1jsna1667b03e552",
 		"X-RapidAPI-Host": "quotes15.p.rapidapi.com"
 	}
 };
