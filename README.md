@@ -67,10 +67,13 @@ https://github.com/alesofia9/Project-1.git
 ## Url Page
 https://alesofia9.github.io/Project-1/
 
+## Slideshow Presentation
+Canva: https://www.canva.com/design/DAFwso8J9n4/fB432dSW2cdDsZN9SXFluQ/view?utm_content=DAFwso8J9n4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1 
+
 ## Credits for API's
 [Api for Quotes ](https://rapidapi.com/martin.svoboda/api/quotes15/)
 
-[Api for Babay names](https://rapidapi.com/apininjas/api/baby-names-by-api-ninjas/)
+[Api for Names](https://rapidapi.com/apininjas/api/baby-names-by-api-ninjas/)
 
 ## License
 
